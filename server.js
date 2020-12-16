@@ -10,4 +10,7 @@ res.sendFile(path.join(__dirname, '/dist/index.html'))
 })
 const port = process.env.PORT || 3338
 app.listen(port)
-console.log(`app is listening on port: ${port}`)
+// console.log(`app is listening on port: ${port}`)
+server.listen(port, () => {
+  console.log(`Listening on http://localhost:${port}/`);
+});
