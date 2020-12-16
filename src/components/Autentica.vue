@@ -42,7 +42,7 @@ export default {
         submitForm(){
 
             console.log(this.form)
-            axios.post('http://127.0.0.1:8000/user/auth/', this.form)
+            axios.post('http://cuentas-api.herokuapp.com/user/auth/', this.form)
                  .then((res) => {
                      console.log(res.data)//Perform Success Action
 
