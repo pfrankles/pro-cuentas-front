@@ -40,7 +40,7 @@
         created: function(){
             this.name = document.getElementById('username').value
             let self = this
-        axios.get('http://127.0.0.1:8000/user/get_name/' + this.name)
+        axios.get('cuentas-api.herokuapp.com/user/get_name/' + this.name)
             .then((result) => {
                 self.name = result.data.name
         })
