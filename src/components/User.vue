@@ -13,7 +13,7 @@
 
 <script>
     import axios from 'axios';
-    import VueSlideBar from 'vue-slide-bar'
+
     export default {
         name: 'User',
         data: function (){
