@@ -7,9 +7,10 @@
         <button v-on:click="salir" id="cerrar"> Cerrar Sesión </button>
     <br>
     <br>
-    <iframe name="iframe1" id="iframe1" title="APP" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_AKrWTvCjzSnCuFby5nYzyJ3LfJ6DhoHfZ3T9Bc1LZEdv4grrVh_pZOHxE0qUXw/pubhtml?widget=true&amp;headers=false"
-        frameborder="" border="0" cellspacing="0"
+    <iframe width="700" height="660" frameborder="0" scrolling="no" src="https://livejaverianaedu-my.sharepoint.com/personal/francisco_gonzalez_javeriana_edu_co/_layouts/15/Doc.aspx?sourcedoc={17b18a2e-a996-4e96-be82-b4ff7b805d2b}&action=embedview&AllowTyping=True&ActiveCell='Dashboard'!S33&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True"
+    border="0" cellspacing="0"
         style="border-style: none;width: 99%; height: 660px;"></iframe>
+
     </div>
 
 </template>
@@ -74,14 +75,14 @@
         width:1900px;height:350px;
         position:relative;
         left:-600px;
-        top:155px;
+        top:200px;
     }
     #User h2{
         font-size: 20px;
         color: #283747;
         position:relative;
         left:1530px;
-        top:-330px;
+        top:-370px;
        
       
 
@@ -109,7 +110,7 @@
         margin: 10%;
         position:relative;
         left:1050px;
-        top:-330px;
+        top:-370px;
     }
         
     
