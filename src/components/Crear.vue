@@ -69,7 +69,7 @@ export default {
                             = 'Autenticando, espere porfavor ...'; 
 
             console.log(this.form)
-            axios.put('http://127.0.0.1:8000/user/register/', this.form)
+            axios.put('https://cuentas-api.herokuapp.com/user/register/', this.form)
                  .then((res) => {
                      console.log(res.data)//Perform Success Action
 
