@@ -40,6 +40,8 @@ export default {
     },
     methods:{
         submitForm(){
+        document.getElementById('msgout').innerHTML 
+                            = 'Autenticando, espere porfavor ...';
 
             console.log(this.form)
             axios.post('https://cuentas-api.herokuapp.com/user/auth/', this.form)
