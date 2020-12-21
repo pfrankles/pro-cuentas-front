@@ -4,7 +4,6 @@
 
          <h2>Usuario <span>  {{name}} </span> Autorizado!</h2>
 
-        <br>
         <button v-on:click="salir" id="cerrar"> Cerrar Sesión </button>
     <br>
     <br>
@@ -72,7 +71,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width:147%;height:350px;
+        width:1900px;height:350px;
         position:relative;
         left:-600px;
         top:155px;
@@ -83,6 +82,8 @@
         position:relative;
         left:1530px;
         top:-330px;
+       
+      
 
        
 
@@ -93,6 +94,7 @@
         position:relative;
         left:0;
         top:0;
+        margin: 10%;
     }
 
     #User button{
@@ -105,9 +107,8 @@
         cursor: pointer;
         font:  100% Tahoma;
         margin: 10%;
-        display:-moz-box;
         position:relative;
-        left:1100px;
+        left:1050px;
         top:-330px;
     }
         
