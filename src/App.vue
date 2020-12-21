@@ -7,13 +7,17 @@
     <div class ="header">
       <h1> Control de Gastos</h1>
       <nav>
-        <button v-on:click="login" class="iniciar"> Iniciar Sesión </button>
+        <button v-on:click="login" v-if="is_auth" class="iniciar"> Iniciar Sesión </button>
+        <button v-on:click="crear"> Crear Usuario </button>
         <button v-on:click="init"> Home </button>
+        
       </nav>
     </div>
 
     <div class = "main-component">
-      <router-view></router-view>
+      <actualizar @log-in="login2"></actualizar>
+      <router-view v-on:log-in="login2"></router-view>
+      
       
       
     
@@ -32,21 +36,39 @@
 export default {
   name: 'App',
   components: {},
-  data: {
+  data: function(){
+    return{
+      is_auth: localStorage.getItem('isAuth') || false
+    }
 
   },
   methods:{
     login:function(){
       // let username = localStorage.getItem("username");
       // this.$router.push ({name:"auten", params:{username:username}});
+      
       this.$router.push ({name:"auten"});
 
     },
+    login2:function(){
+
+  
+        localStorage.setItem('isAuth', false)
+        this.$router.push ({name:"auten"});
+   
+
+    },
+
+
     init:function(){
       this.$router.push ({name:"fondo"});
       location.reload()
 
+    },
 
+    crear:function(){
+      this.$router.push ({name:"crear"});
+      location.reload()
 
     }
 
@@ -57,6 +79,7 @@ export default {
    if(this.$route.name == "root"){
       this.$router.push ({name:"fondo"})
    }
+   localStorage.setItem('isAuth', true)
 
   }
 
@@ -113,7 +136,7 @@ export default {
     background: #ffffff;
     border: 1px solid #9b9ea0;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     cursor: pointer;
     font:  60% Tahoma;
   }
@@ -121,6 +144,7 @@ export default {
     color: #ffffff;
     background: #4e5862;
     border: 1px solid #181f27;
+
   }
   .main-component{
     height: 75vh;
