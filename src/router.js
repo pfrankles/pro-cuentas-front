@@ -3,6 +3,7 @@ import User from './components/User'
 import Autentica from './components/Autentica'
 import App from './App'
 import Fondo from './components/Fondo'
+import Crear from './components/Crear'
 
 
 const router = new vueRouter({
@@ -29,6 +30,11 @@ const router = new vueRouter({
             name: "fondo",
             component: Fondo
         },
+        {
+            path: '/user/register/',
+            name: "crear",
+            component: Crear
+        },
 
     ]
 
@@ -47,4 +53,5 @@ router.beforeResolve((to, from, next) => {
     // Complete the animation of the route progress bar.
     NProgress.done()
   })
+
 export default router
