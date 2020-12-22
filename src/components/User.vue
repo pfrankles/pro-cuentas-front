@@ -7,8 +7,8 @@
         <button v-on:click="salir" id="cerrar"> Cerrar Sesión </button>
     <br>
     <br>
-    <iframe width="700" height="660" frameborder="0" scrolling="no" src="https://livejaverianaedu-my.sharepoint.com/personal/francisco_gonzalez_javeriana_edu_co/_layouts/15/Doc.aspx?sourcedoc={17b18a2e-a996-4e96-be82-b4ff7b805d2b}&action=embedview&AllowTyping=True&ActiveCell='Dashboard'!S33&wdHideGridlines=True&wdHideHeaders=True&wdInConfigurator=True"
-    border="0" cellspacing="0"
+    <iframe name="iframe1" id="iframe1" title="APP" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ_AKrWTvCjzSnCuFby5nYzyJ3LfJ6DhoHfZ3T9Bc1LZEdv4grrVh_pZOHxE0qUXw/pubhtml?widget=true&amp;headers=false"
+        frameborder="" border="0" cellspacing="0"
         style="border-style: none;width: 99%; height: 660px;"></iframe>
 
     </div>
